@@ -1,0 +1,14 @@
+collection: exp
+order: 1
+title: Bitcentral
+position: Senior Sofware Engineer
+duration: 03/2020 - Present
+desc:
+  - "Video OnDemand Player : Design, development and deployment of a custom element that plays a video 
+  playlist and accepts preroll and postroll ads. The component was built using VideoJs and 
+  GoogleIMA using TypeScript and Webpack and published to AWS via PowerShell."
+  - "LiveStreamManager Lambda: a pair of AWS Lambda funtions in .NET Core. One reads video stream segments from
+  a M3U8 source and saves them in S3 an the other receives and sorts the transcoded segments from a service and
+  sends them to SQS."
+  - "NMOS Integration: as a member of the team I was responsible for reading the specification as well as 
+  integration of the new devices and their APIs into the system."

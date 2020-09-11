@@ -1,0 +1,11 @@
+collection: about
+title: About me
+desc:
+  - Experienced Software Engineer with a demonstrated history of working in
+    the financial services, Media and eCommerce industry. Skilled in Agile
+    Methodologies, ASP.NET MVC and .NET Core, Entity Framework, RestFul and
+    WCF APIs, Front-end frameworks/libraries (Angularjs, Angular2+,
+    React/Redux, VueJs, KnockoutJs) and TypeScript. Strong engineering
+    professional with a Master's degree focused in Computer Science from
+    California State University-Fullerton.
+order: 1
