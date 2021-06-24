@@ -1,5 +1,6 @@
 html {
-  font-family: sans-serif;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -7,6 +8,19 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(10, 25, 47);
+}
+
+.bg-light {
+  background-color: rgb(17 45 86) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(136, 146, 175);
+}
+
+.jumbotron {
+  background-color: rgb(17 45 86);
 }
 article,
 aside,
@@ -199,8 +213,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  color: hsl(225deg 20% 61%);
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

@@ -12,6 +12,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircle } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import Container from "react-bootstrap/Container"
 import "./layout.css"
 import Jumbotron from "react-bootstrap/Jumbotron"
@@ -19,7 +21,9 @@ import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
+import downloadfile from './../docs/resume.pdf'
 
+library.add(faFilePdf);
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     {
@@ -37,19 +41,20 @@ const Layout = ({ children }) => {
     borderRadius: "10%",
   }
   const iconStyle = {
-    background: "#e9ecef",
-    color: "black",
+    background: "#112d56",
+    color: "#8892af",
     ":hover": {
       color: "inherit",
     },
   }
+  const linkStyle = {
+    "text-decoration": "none",
+    color: "inherit",
+  }
   return (
     <>
-      <Navbar bg="light" expand="lg" sticky="top">
+      <Navbar bg="light" expand="lg" sticky="top" className="mb-1">
         <Container>
-          <Navbar.Brand>
-            <Link to="/">Amir Shirazi</Link>
-          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -79,7 +84,7 @@ const Layout = ({ children }) => {
                 <h3 className="mb-1">
                   <small>Senior Software Engineer</small>
                 </h3>
-                <a href="mailto: amirshirazi61@yahoo.com">
+                <a href="mailto: amirshirazi61@yahoo.com" style={linkStyle}>
                   amirshirazi61@yahoo.com
                 </a>
                 <div>
@@ -91,6 +96,7 @@ const Layout = ({ children }) => {
                       style={iconStyle}
                       transform="shrink-5"
                       className="mr-1"
+                      title="my github profile"
                     />
                   </a>
                   <a
@@ -103,6 +109,21 @@ const Layout = ({ children }) => {
                       mask={faCircle}
                       style={iconStyle}
                       transform="shrink-5"
+                      className="mr-1"
+                      title="my linkedIn profile"
+                    />
+                  </a>
+                  <a
+                    href={downloadfile}
+                    download
+                  >
+                    <FontAwesomeIcon
+                      size="lg"
+                      icon={faFilePdf}
+                      mask={faCircle}
+                      style={iconStyle}
+                      transform="shrink-5"
+                      title="download my latest resume"
                     />
                   </a>
                 </div>
