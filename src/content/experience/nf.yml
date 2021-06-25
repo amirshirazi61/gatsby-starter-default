@@ -1,6 +1,7 @@
 collection: exp
 order: 2
 title: National Funding LLC
+url: http://nationalfunding.com
 desc:
   - End-to-end design and lead and development of a web application responsible for pledging the loans into the system using .NET Core Web API, React/Redux AWS Parameter Store and Entity Framework Core.
   - "Taking initiative and end-to-end lead for refactoring and fixing the loan management software : a large scale monolithic web application written in .NET framework, WCF, jQuery, JavaScript and Knockout.js along with all its standalone services and console apps."

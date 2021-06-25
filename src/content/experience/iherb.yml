@@ -1,6 +1,7 @@
 collection: exp
 order: 4
 title: iHerb
+url: https://iherb.com
 desc:
   - Refactoring the mobile web UI for “My Account” portal using jQuery, JavaScript HTML and CSS.
     Taking the lead and initiative for rewriting the User module web application using .NET Core 2.1

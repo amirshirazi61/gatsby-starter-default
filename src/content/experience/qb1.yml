@@ -1,6 +1,7 @@
 collection: exp
 order: 5
 title: Quick Bridge Funding LLC
+url: http://quickbridge.com
 desc:
   - Taking the lead and initiative of multiple web applications and services using C#, ASP.NET MVC, EF 5, 6+, SQL Server2014+,
     SOAP and Rest API, WCF, AngularJS, Angular 2, Typescript, Knockout.js.

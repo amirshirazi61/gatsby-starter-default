@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
     },
   }
   const linkStyle = {
-    "text-decoration": "none",
+    "textDecorationStyle": "none",
     color: "inherit",
   }
   return (
