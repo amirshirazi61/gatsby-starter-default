@@ -10,7 +10,7 @@ const ExpPage = ({ data }) => (
     {data.aboutMe.nodes.map((am, i) => (
       <React.Fragment key={i}>
         <blockquote className="blockquote d-flex justify-content-between">
-          <h2 className="d-flex">{am.title}</h2>
+          <a href={am.url} target="blank"><h2 className="d-flex">{am.title}</h2></a>
           <footer className="small blockquote-footer ml-2">
             {am.duration}
           </footer>
@@ -41,6 +41,7 @@ export const query = graphql`
     ) {
       nodes {
         title
+        url
         desc
         duration
       }
